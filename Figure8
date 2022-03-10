@@ -1,0 +1,15 @@
+#include<linkbot.h>
+CLinkbotI moby;
+double radius = 1.75;
+double trackwidth = 3.69;
+moby.driveDistance(5, 2);
+moby.turnRight(60, radius, trackwidth);
+moby.driveDistance(40, 12);
+moby.turnLeft(60, radius, trackwidth);
+moby.driveDistance(35,10);
+moby.turnLeft(80, radius, trackwidth);
+moby.driveDistance(40,10);
+moby.turnLeft(70, radius, trackwidth);
+moby.driveDistance(40,10);
+moby.turnLeft(70, radius, trackwidth);
+moby.driveDistance(38,10);
