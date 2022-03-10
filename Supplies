@@ -1,0 +1,18 @@
+#include<linkbot.h>
+CLinkbotI Gil;
+double radius = 1.75;
+double trackwidth = 3.69;
+
+Gil.driveDistance(49, 2);
+Gil.turnLeft(80, radius, trackwidth);
+Gil.driveDistance(28,2);
+Gil.turnLeft(80, radius, trackwidth);
+Gil.driveDistance(11,2);
+Gil.driveDistance(-3,2);
+Gil.turnRight(80, radius, trackwidth);
+Gil.driveDistance(4,2);
+Gil.turnLeft(80, radius, trackwidth);
+Gil.driveDistance(4,2);
+Gil.turnLeft(80, radius, trackwidth);
+Gil.driveDistance(7,2);
+Gil.turnRight(80, radius, trackwidth);
