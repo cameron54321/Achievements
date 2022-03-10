@@ -1,0 +1,184 @@
+#include <stdio.h>
+int  introChoice, middleChoice1, middleChoice2, middleChoice3;
+int x = randint(1,15);
+int y = randint(1,10);
+int z = randint(13,17);
+char name[20];
+char name2[20];
+void intro() {
+
+    printf(name,  " is an adventurer on a quest to find the golden frying pan to save his village from an intense food shortage.  How old is he? ");
+    
+    printf(z);
+        printf(". It is said that the frying pan can cook anything you want, just say what you want, and pour it with water.  Joining him on his quest, is his best friend," , name2, ".",  " The boys encounter a wise old man who turns out to be a wizard.  He says that he can help them find the golden frying pan, but they will have to choose 1 of 3 paths  Which path will they choose?");
+    printf(" Make your choices:\n1=Forest of Forgiveness , 2=Desert of Honesty, or 3=Volcano of Bravery\n");
+    scanf ("%i", &introChoice);
+    while(introChoice !=1 && introChoice != 2 && introChoice !=3){
+        printf("That is not a choice. Please choose '1', '2', '3'\n");
+        scanf("%i", &introChoice);
+    }
+}
+void middle1(){
+    printf("you choose the Forest of Forgiveness\n");
+    printf(name, " and ", name2, " choose to progress the Forest of Forgiveness.  The old man creates a portal that leads straight to the forest, which the boys walk into.  As they walk, it’s not long before they are attacked by a tiger.  And just as they’re about to get eaten, the tiger realizes what she is doing and immediately apologizes for attempting to eat them.  She says that her name is Tina and says that she thought the boys were prey.  She explains that she doesn’t want to attack them because she wants to befriend other animal, but she loses control everytime she sees prey.  How will the adventurers help her?");
+    printf(" make your end choice: 4=Fight Tina, 5=Befriend Tina, or 6=Find Tina other things to eat\n");
+    scanf("%i", &middleChoice1);
+        
+}
+void middle2 (){
+    printf("you chose the Desert of Honesty\n");
+    printf(name, " and ", name2, " choose to go to the Desert of Honesty through a portal.  They traverse the blazing hot desert. ",  name, " complains about the heat, but then his friend spots an oasis and says they should get a drink.  The water felt like heaven to them.  But then, they find some fish.  Luckily, they brought their supplies to make a fire.  They soon eat the fish, which they thought was delicious.  Then, an old camel named Cooper comes across the two boys and begins with introductions.  He says that his name is Cooper and that he was coming by to eat the fish that he left in this oasis.  He asks them if they know where they went.  The two boys realize they ate his fish.  What will they tell Cooper?");
+    printf(" make your end choice; 7=Tell Cooper the truth, 8=Lie to Cooper, or 9=Find Cooper a gift\n");
+    scanf("%i", &middleChoice2);
+    
+    
+}
+void middle3 (){
+    printf(" you chose the Volcano of Bravery\n");
+    printf(name, " and ", name2, " will traverse the Volcano of Bravery, wondering what challenges will await them.  Through the portal, they arrive on a ship, and they see a volcano in the distance.  But before they can get to it, a friendly-looking dolphin suddenly crosses their path.  She says that her name is Debbie.  After introductions, Debbie asked them for a favor.  She tells them that the volcano has been causing a ruckus to the sea, and his name is Victor.  She begs them to take him down.  What will the boys do?");
+    printf(" make your end choice; 7=Don't help Debbie, 8=Confront Victor, or 9=Befriend Victor\n");
+    scanf("%i", &middleChoice2);
+
+}
+void end4(){
+    printf("you chose to fight Tina for attacking them" ".\n");
+    printf(name, " and ", name2,  " say they don’t believe her excuse and say they will fight her for attacking.  Tina is shocked at their words, but decides to engage them in battle anyway. ",  name,  " unsheathes his sword and ", name2,  " gets out his bow & arrow.  Tina goes for a claw swipe but they swiftly dodge it.  After a few exchanges of attacks, the hero stabs his sword into Tina, killing her.  They celebrate the victory, until the wizard comes back and tells them that they have failed the forgiveness test, and that the golden frying pan is now out of reach, which ends their quest in failure.(bad ending)");
+    exit(1);
+}
+void end5(){
+    printf("you chose to play with Tina so she can befriend the other animals"".\n");
+    printf(name,  " offers to play with the tiger to show her she can befriend the animals.  Tina agrees to give that a try and offers to play tag.", name2, "agrees.  They play tag and have a lot of fun playing it, as well as Tina’s aggressive nature soon leaves her.  A group of hares sees them playing tag and asks if they can play with them.  Tina thanks them for her newfound passion for playing with other animals.  The wizard then comes in and congratulates the boys for forgiving Tina and helping her with her problem.  The wizard then leads them to the golden frying pan hidden behind the bush.  They say they can get rid of their village’s hunger.(good ending)");
+    exit(1);
+}
+void end6(){
+    printf("you chose to find Tina other Things to eat" ".\n");
+    printf(name2,  " offers finding other things for Tina to eat besides animals.  But what could she possibly eat instead? ", name, " thinks of vegetables, but Tina says no.  She doesn’t like to eat those.  So they suggest fruit and Tina perks up and says yes.  She always wanted to try mangos.  So", name2,  " uses his bow to get the mangos off of the tree. ", name, " jumps up to retrieve them and gives them to Tina.  Tina eats it, and says this is delicious and much better than eating other animals.  The Wizard appears and congratulates the boys for giving Tina a good alternative to eating animals.  He then awards them with the golden frying pan behind the bush. So the boys go back to the village and show the townspeople the frying pan.  This wonderful artifact eliminated the village’s hunger and the boys are crowned as the heroes.(true ending)");
+    exit(1);
+
+}
+void end7(){
+    printf("you chose to tell Cooper that you ate the fish" ".\n");
+    printf(name2,  " decides to tell Cooper the truth about them eating the fish.  Cooper is disappointed to hear about these news.  But, he says he will forgive them if they are able to get him more fish at the next oasis.  After a long trip to the next oasis, they finally find it, but it’s much bigger than the last oasis they encountered.  They asks where the fishing rods are, but Cooper states that they must find fish without fishing rods.  Cooper says that he needs at least 8 fish. ", name,  " jumps into the water"".\n");
+
+
+    
+
+    printf(x);
+        if(x < 8){
+            printf(". Cooper apologies and says that amount of fish won’t do for him.  But he atleast thanks them for trying and their honesty.");
+        }
+
+    
+    
+        if (x >= 8){
+            printf(". Cooper is happy to see that he has gotten the required number of fish and scarfs them down immediately.  Cooper thanks him for his hard work and ", name2,  " honesty.  And the delicious fish. ");
+        }
+    
+    printf("The wizard then appears and awards the boys for their honesty with the camel and gives direction toward the golden frying pan in the tree next to the oasis so they can fix the food problem in their village.(Good ending)");
+
+
+    exit(1);
+}
+void end8(){
+    printf("you chose to lie to Cooper about the fish" ".\n");
+    printf(name2, " decides to lie to the camel and tells him that a cobra ate them,  Cooper gets angry at these false news and says that he should’ve known that Chris would eat them and Lloyd begs him not to do anything reckless.  Then, Cooper finds Chris the Cobra and accuses him of eating his fish. Chris tried to explain that he did no such thing   Cooper soons devours Chris whole for this deed.", name, " hurries over to tell Cooper the truth, but it was too late.  Cooper is shocked to realize that the boys have lied to him.  He says that they should leave and that they should’ve told the truth earlier.  The boys walk away, sad that they won’t be able to find the frying pan anymore.(Bad ending)");
+    exit(1);
+}
+void end9(){
+    printf("you chose to find Cooper another gift" ".\n");
+    printf(" They both run away without a word to Cooper.  Cooper shrugs it off and guesses that they didn’t eat it.", name2, " feels guilty for what they did and decides that they should find a gift for Cooper.", name, " then spots a temple and says they should find something in there.  The boys go into the temple, but find that the place is riddled with traps.  Like darts, lava, and even boulders!  After the struggle, they finally found an ancient artifact that looks like the wizard’s head.  They run back to Cooper and tell them that they found the treasure.  Cooper loves the gift but asks why they gave it to them.  They tell him that it’s because they ate his fish and that they wanted to give him a gift to make up for it.  Cooper is proud of the boys for telling the truth and being generous enough to give him a gift.  The wizard comes in and congratulates the boys for their honesty.  And leads them to the path of the frying pan. So the boys go back to the village and show the townspeople the frying pan.  This wonderful artifact eliminated the village’s hunger and the boys are crowned as the heroes.(True ending)");
+    exit(1);
+    
+}
+
+void end10(){
+    printf("you chose to not help Debbie" ".\n");
+    printf(name2, " says that they cannot help, but Debbie let’s them go on their merry way.  But then Victor the Volcano erupts, and one of the meteors from Victor hits their ship.  And it isn’t too long before it sinks into the water.", name, " says that they should’ve been braver and helped Debbie.  And then they drown.(Bad ending)");
+    exit(1);
+    
+}
+void end11(){
+    printf("you chose to confront Victor" ".\n");
+    printf(name2, " says that they will put a stop to Victor the volcano, triumphantly.  Debbie thanks them and they go over to the volcano.  But the trip proved to be quite difficult.  As they battled roaring waves and sharks, they finally made to the island where Victor resides.   Victor was grumpy because the boys woke him up from his slumber.", name, " tries to rub off his fear and unsheathes his sword and points it at Victor and says that they’re here to stop them.  But Victor mentions the fact that his friend ran away.  Victor attemps to melt", name, " with his molten lava.  But he manages to dodge it as he begins climbing on top of Victor.  Then he makes it to the top and does downward stab into the heart of the volcano and manages to stab through it.  Victor starts to do his last eruption, and explodes.  Eric celebrates his victory.  And the wizard comes through and congratulates the hero on his bravery and leads him to the path of the golden frying pan to help his village.  Debbie also arrives and thanks him for his bravery.  His friend tries to take all of the credit, but Eric mentions how he ran away. (Good ending)");
+    exit(1);
+    
+}
+void end12(){
+    printf("you chose to befriend Victor instead" ".\n");
+    printf(name2, " says that they will stop Victor, but they are actually going to befriend them.  They travel through the treacherous waves and the sharks to reach the island when the volcano resides.  Victor was grumpy because the boys woke him up from his slumber.", name, " tries to rub off his fear and slowly walks up to Victor and tells him that they are here to befriend him.  Victor is confused by these words, but they insist that there must be a reason why he is hurting the sea animals.  Victor decides to admit that he has been feeling under the weather inside his core.  There must be something in there that’s bothering him.", name, " volunteers to go inside the core and see the problem.  It turns out that his core is clogged and nothing is coming out properly.  He sees that a tree is blocking the way.  6 sword slashes should do the trick.  ");
+    
+    printf(y);
+        if(y < 6){
+            printf("He comes out and apologizes to Victor that his core will remain clogged for the time being.  Victor is sad about the news, but thanks them for at least trying.");
+            
+        }
+        if(y >= 6){
+            printf("He is able to slice the tree in half and unclog is core.  Eric asks him to do a test erupt.  Victor does just that, and it felt great to him.  He thanks the boys for what they have done for him.");
+            
+        }
+    printf("The wizard appears and commends the boys for being brave enough to befriend the volcano.  So he directs them to the golden frying pan.  So the boys go back to the village and show the townspeople the frying pan.  This wonderful artifact eliminated the village’s hunger and the boys are crowned as the heroes.(True ending)");
+        exit(1);
+        
+    }
+    
+    
+
+int main(){   
+    printf("Pick two names.\n");
+    scanf("%s", &name);
+    scanf("%s", &name2);
+    intro();
+    if(1 == introChoice){
+        middle1();
+        if(middleChoice1 == 4){
+            end4();
+        }
+
+    }
+        if(middleChoice1 == 5){
+            end5();
+           
+    
+    }
+        if(middleChoice1 == 6){
+            end6();
+    }
+    if(2 == introChoice){
+        middle2();
+    
+     
+        if(middleChoice2 == 7){
+            end7();
+
+    }
+        if(middleChoice2 == 8){
+            end8();
+        }
+        if(middleChoice2 == 9){
+            end9();
+            
+        }
+        
+    }
+    if(3 == introChoice){
+        middle3();
+        
+        if(middleChoice3 == 10){
+            end10();
+        }    
+            
+        if(middleChoice3 == 11){
+            end11();
+        }
+        if(middleChoice3 == 12){
+            end12();
+            
+        }
+        
+    }
+        
+        
+    
+}
+
+
